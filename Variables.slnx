@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Constant Fields/Constant Fields.csproj" />
+  <Project Path="HelloWorld/HelloWorld.csproj" />
+  <Project Path="Practice/Practice.csproj" />
+  <Project Path="Variables&amp;DataTypes/Variables&amp;DataTypes.csproj" />
+  <Project Path="Variables&amp;DataTypes2/Variables&amp;DataTypes2.csproj" />
+</Solution>
