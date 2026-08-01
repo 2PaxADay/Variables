@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography;
+﻿using System.Runtime.CompilerServices;
+using System.Security.Cryptography;
 
 Console.WriteLine("Hello, World!");
 
@@ -187,12 +188,12 @@ Console.WriteLine(result);
 
 // Logical operators
 /*
- * Logical END &&
+ * Logical AND &&
  * Logical OR ||
  * Logical NOT !
  */
 
-// END - Returns as True only if both operands are True, otherwise it returns False
+// AND - Returns as True only if both operands are True, otherwise it returns False
 
 bool resultEND = true && true; // Only condition when it returns the logic as true
 bool resultENDF = false && false; // FALSE
@@ -241,4 +242,31 @@ else if (deductionResult)
     double complexDeductionResult = complexNumber1 - complexNumber2;
     Console.WriteLine($"{complexDeductionResult}");
 }
+
+// Logical OR ||
+// Example of customer buying something and getting a discount
+
+int buyMilk = 6;
+int buyCookie = 2;
+bool haveLoyaltyCard = true;
+
+bool getDiscount = buyMilk > 5 || buyCookie > 5; || haveLoyaltyCard;
+//                 true        ||  false         ||  true
+//                          result: true
+// even if customer didnt buy enogh milk or cookies, they would still get a discount since they have loyalty card
+
+// Example of a player starting a game again where he can choose to press ENTER or any button but he also has to have 0 lives
+// this would be the Logical OR and logical AND implementation
+
+bool pressKey = true;
+bool pressButton = false;
+int nmbrOfLives = 0;
+
+bool newRound = pressKey || pressButton && nmbrOfLives == 0;
+//               true    ||  true      &&   true
+//                     true && true = true
+
+// Logical NOT - like a switch for one operand
+
+bool exResult = !false; // this would make it true
 
