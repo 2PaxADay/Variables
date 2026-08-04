@@ -2,6 +2,7 @@
   <Project Path="Constant Fields/Constant Fields.csproj" />
   <Project Path="HelloWorld/HelloWorld.csproj" />
   <Project Path="if-statements/if-statements.csproj" Id="9867a4cd-ffb2-41cf-acdc-e3cb8c6b6a22" />
+  <Project Path="Loops/Loops.csproj" Id="ddbc687c-0777-43df-bf3e-a32853afa387" />
   <Project Path="Practice/Practice.csproj" />
   <Project Path="Variables&amp;DataTypes/Variables&amp;DataTypes.csproj" />
   <Project Path="Variables&amp;DataTypes2/Variables&amp;DataTypes2.csproj" />

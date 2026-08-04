@@ -196,3 +196,7 @@ Console.WriteLine(rnd.Next(100)); // this will output a random number from 0-99
 
 // Date Time Struct
 
+//1. Current date and time we call with Now
+
+DateTime dt = DateTime.Now;
+
