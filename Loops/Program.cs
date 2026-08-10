@@ -35,3 +35,14 @@ for ( int forLoop = 0; forLoop < 50; forLoop = forLoop + 3)
 {
     Console.WriteLine(forLoop);
 }
+
+// continue statement will close the loop in which it resides
+// break will termionate the whole tree of loop
+for (int i = 1;i <= 10; i++)
+{
+    if(i == 5)
+    {
+        continue;
+    }
+    Console.WriteLine("Repetition" + i);
+}

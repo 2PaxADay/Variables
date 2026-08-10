@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="Collections/Collections.csproj" Id="9bca8de2-c045-4a4e-a8c2-e0176daee1cf" />
   <Project Path="Constant Fields/Constant Fields.csproj" />
   <Project Path="HelloWorld/HelloWorld.csproj" />
   <Project Path="if-statements/if-statements.csproj" Id="9867a4cd-ffb2-41cf-acdc-e3cb8c6b6a22" />
