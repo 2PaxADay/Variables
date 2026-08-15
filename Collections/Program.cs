@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Hello, World!");
+﻿using System.ComponentModel;
+
+Console.WriteLine("Hello, World!");
 
 // array
 
@@ -39,3 +41,103 @@ Console.WriteLine(numbers.Length); // 10
 Console.WriteLine(numbers[numbers.Length - 1]); // Here we are calling the last value in the array by doing 10-1 to show us the value on the 9th place ( last )
 
 // loop on linear array
+
+
+string[] oruzija = { "sword", "axe", "spear" };
+
+foreach (string x in oruzija)
+{
+    Console.WriteLine("Player is holding " + x);
+}
+
+// here we are making a temporary integer j, its starting value is 0 because the first array is 0, the for loop runs as long as j is smaller than 10 ( because we have 10 arrays in the numbers collection), for everytime it runs it adds a value to j.
+//after the value is added it prints it in the console because we are using numbers[j] which actually has a numerical value which is incremented by each pass.
+for(int j = 0; j<10; j++)
+{
+    Console.WriteLine(numbers[j]);
+}
+
+// better way to code is to add .Length property so it doesnt crash if we change number of components in an array
+for(int j =0; j < numbers.Length; j++)
+{
+    Console.WriteLine(numbers[j]);
+}
+
+// adding together the values of an array
+
+int sum = 0;
+
+for(int j=0; j<numbers.Length; j++)
+{
+    sum += numbers[j];
+}
+
+Console.WriteLine(sum);
+
+//Way of finding specific component in an array combining for and if loops
+
+string[] names = { "Mark", "Jack", "Zack", "Zimmerman", "Dolce" };
+
+bool isFound = false;
+string foundName = "";
+
+for(int i =0; i<names.Length; i++)
+{
+    if (names[i] == "Dolce")
+    {
+        isFound = true;
+        foundName = names[i];
+        break;
+    }
+}
+
+if (isFound)
+{
+    Console.WriteLine(foundName + " Your name is now saved under the foundName string variable");
+}
+
+//Here we make a reserved array space for the user to fill out later, the capacity will be 5
+
+int[] userNumbers = new int[5];
+
+for(int i =0; i<userNumbers.Length; i++)
+{
+    userNumbers[i] = int.Parse(Console.ReadLine());
+}
+
+for(int t = 0; t < userNumbers.Length; t++)
+{
+    Console.WriteLine(userNumbers[t]);
+}
+
+//same thing as above only adding the TryParse method to save the programm from crashing
+
+int[] tryParseUserNumbers = new int[5];
+
+for(int i = 0; i < tryParseUserNumbers.Length; i++)
+{
+    bool correctInput = false;
+
+    while (!correctInput)
+    {
+        Console.WriteLine("Please insert a number for position " + i + ": ");
+        string userInput = Console.ReadLine();
+
+        correctInput = int.TryParse(userInput, out tryParseUserNumbers[i]);
+
+        if (!correctInput)
+        {
+            Console.WriteLine("Error, wrong character input");
+        }
+    }
+
+}
+
+Console.WriteLine("All 5 slots are filled with numbers!");
+
+// This is a method to just print the latest arrays components
+
+for(int i = 0; i<tryParseUserNumbers.Length; i++)
+{
+    Console.WriteLine(tryParseUserNumbers[i]);
+}
